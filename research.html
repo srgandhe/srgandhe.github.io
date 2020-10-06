@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<style type="text/css">
+
+.emph {
+  font-style:italic;
+  font-weight:bold;
+}
+
+p.par1 {
+  text-align:justify;
+}
+
+p.par2 {
+  text-align:justify;
+  margin-left:50px;
+}
+
+li.par2 {
+  font-style:italic;
+  font-weight:bold;
+  margin-left:50px;
+}
+
+
+h3.par1 {
+  text-align:left;
+}
+
+</style>
+
+
+</head>
+<body bottommargin="10" leftmargin="50" marginheight="10" marginwidth="50" rightmargin="50" topmargin="10">
+<!------------------------ Content zone, add your content below ---------------------------->
+<BR><center><h3>Research</h3></center>
+
+<p class="par1">
+My research interests include spoken dialogue management, coherent interaction, natural language processing.
+Specifically I'm interested in applying machine learning techniques toward bootstrapping dialogue models from human-human corpus with minimal annotations.
+</p>
+ 
+<p class="par1">
+<h3 class="par1">Virtual Human Dialogue Systems</h3>
+
+<p class="par2">
+At Institute for Creative Technologies, I have been building several Virtual Human dialogue systems. The goal for such dialogue systems is to be as human-like as possible and their performance is generally evaluated using turn-by-turn appropriateness ratings.
+</p>
+
+<p class="par2">
+There are multiple approaches towards building dialogue systems. The specific architecture chosen is dictated by the specific goals of the dialogue system and its evaluation criteria. This architecture, in turn, determines the specific types of resources required.
+</p>
+
+<p class="par2">
+One of the contributions of my thesis towards practical goal of rapid prototyping of virtual human dialogue systems is <span class="emph">Reducing the cost of collecting required resources.</span> Our approach is to allow designers with limited or no expertise in computational linguistics to quickly build consistent resources with the help of an integrated authoring tool (Gandhe et al., 2009). Reducing the level of expertise required allows us to collect the resources at a reduced cost.
+</p>
+
+<p class="par2">
+We have adopted a top-down approach for building virtual characters that can take part in tactical questioning simulations (Gandhe et al., 2008). Scenario designers start by authoring the domain knowledge for the virtual characters with the help of an integrated authoring tool. The authoring tool automatically generates all relevant dialogue acts following a genre specific dialogue act scheme and ensures consistency and completeness. Scenario designers can author appropriate surface text for all the dialogue acts. The tool also allows designers to specify simple dialogue policies for question-answering. The accompanying dialogue manager uses an information-state based approach (Traum &amp; Larsson, 2003). The information-state is in part based on the conversational game theory (Lewin, 2000) and implemented as State Chart XML (SCXML), a W3C working draft (Barnett et al., 2008). To date, seven such virtual human characters have been authored by designers who had no experience in building dialogue systems. Check out the demonstration video of one such character, Amani.
+</p>
+<p class="par2">
+<iframe title="YouTube video player" width="560" height="349" src="http://www.youtube.com/embed/nyWQDKXAH2Q?rel=0" frameborder="0" allowfullscreen></iframe>
+</p>
+<p class="par2">
+Other contributions of my thesis work are,
+<p>
+
+<li class="par2">Developing flexible dialogue architectures that allow novel combinations of different types of resources.</li>
+
+<p class="par2">
+Each dialogue system architecture imposes its own constraints on what resources can be combined. Traditional dialogue systems such as information state based models (Traum &amp; Larsson, 2003) operate at a dialogue act level. For a dialogue system to be operational corpus annotation with dialogue acts and rule authoring for updating the information state are prerequisites. On the other hand, there have been approaches that operate at surface text level alone. (e.g., Wallace (2003), Abu Shawar &amp; Atwell (2005)). But the output of such systems frequently is ungrammatical.
+</p>
+
+<p class="par2">
+We present a model that primarily works at the surface text level but also allows for additional deeper information state annotations. Our initial model has been implemented and tested in the context of a Virtual Human dialogue system and has shown 82% improvement in response appropriateness over a random baseline (Gandhe &amp; Traum, 2007b; Gandhe &amp; Traum, 2007a). The model uses information state annotations for tracking the topic in order to avoid violations of presupposition. It is significantly better than a model that takes only surface text dependencies into account as judged by the dialogue participants. Our model bootstraps from roleplay and WoZ dialogue corpora and allows for information state annotations in an incremental fashion. It also allows us to compare relative performance gains from different types of annotations over modeling the surface text dependencies alone.
+</p>
+ 
+
+<li class="par2">Reducing the cost of estimating the performance for a specific dialogue system</li>
+
+<p class="par2">
+One of the ways to calculate the performance is to actually evaluate the resulting dialogue system with human users. But this is a time consuming process and can be prohibitively costly for multiple evaluations. The cost of estimating the performance can be reduced by reducing the human involvement from the evaluation procedure.
+</p>
+
+<p class="par2">
+Our approach focuses on evaluating dialogue coherence, which is a suitable criterion for Virtual Human Dialogue Systems. There is a need for automated evaluation or methods that can estimate the performance of the dialogue system (evaluation understudy).
+</p>
+
+<p class="par2">
+We have developed an evaluation understudy for evaluating local models of dialogue coherence. A local dialogue coherence model gives a coherence score for an utterance given its context (the dialogue history). We propose to use the information ordering task (Lapata, 2006) which repeatedly applies the local model of dialogue coherence to construct the most coherent ordering from a set of dialogue utterances. We have found an objective measure for scoring the success in information ordering task that correlates well with human judgments for dialogue coherence (Pearson's r = 0.75) (Gandhe &amp; Traum, 2008). This objective evaluation measure can be used to compare different dialogue models using different resources.
+</p>
+
+<p class="par1">
+Here are some of the other projects I've worked on,
+</p>
+
+<h3 class="par1">Coherent Interactions</h3>
+<p class="par2">
+Free text questions and pre-recorded video as a response is a recurrent theme in NL interfaces. It has proved very useful in various applications for training and entertainment as well. Users are allowed to input a free-text question which in turn elicits a pre-recorded video response. Although the video response tends to have very good value in terms of immersive experience, the very design of the system allows for a lack of coherence. It is due to the case when there is no video response that directly answers the question or when the response is not phrased in a desired manner. I tried to address this issue by introducing short linking dialogue between question and answer to bridge the gap. Experimental results showed that human-generated linking dialogs can significantly increase the coherence of interaction (Gandhe et. al., 2004). Further analysis of human-generated linking dialogs reveals that these carry more information than present in the answer or the question. I have implemented first techniques for creating such computer generated linking dialogues (Gandhe et. al., 2006).
+</p>
+ 
+
+<h3 class="par1">Speech-to-Speech Translation</h3>
+<p class="par2">
+I helped develop a speech to speech translation system for medical domain. (Narayanan et. al., 2004, Belvin et. al., 2005) Using this system, an English speaking doctor can communicate with a Farsi speaking patient and carry out the medical diagnosis. My work focused on the dialogue manager and a java based graphical user interface that facilitates the communication between patient and the doctor. Only one participant, the doctor, can control the interaction. The dialogue manager component in this system is different from most of the dialogue systems, in the sense that it has no active participation in carrying out the dialogue. It can only assist the communication process.
+</p>
+ 
+
+<h3 class="par1">Speech Applications on Mobile Devices</h3>
+<p class="par2">
+During my summer internship at Microsoft Research, I worked on improving the command and control speech application called VoiceCommand designed for Windows Mobile platform. VoiceCommand uses SAPI CFG grammar for speech recognition. The work focused on improving recognition results for out of grammar utterances (Paek et. al., 2007). I also investigated methods for rapid prototyping of grammars used in speech recognition for such command and control systems (Paek et. al., 2008).
+</p>
+
+<h3 class="par1">Natural Language Generation</h3>
+<p class="par2">
+I developed a natural language generation module which was part of a virtual human which can engage in negotiation dialogues (Traum et al., 2005).  The module was responsible for sentence realization and generated surface text for an utterance from an input semantic frame. It used hand authored phrasal expansion grammar and was implemented with Augmented Transition Networks.
+</p>
+
+<font color="white">
+</body>
+</html>
