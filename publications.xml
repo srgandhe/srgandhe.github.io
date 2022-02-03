@@ -1,359 +1,358 @@
 <?xml-stylesheet href="./publications.xsl" type="text/xsl"?>
 
- <publications>
-   <publication>
+<publications>
+  <publication>
+    <authors>Gurmeet Manku, James Lee-Thorp, Bhargav Kanagal, Joshua Ainslie, Jingchen Feng, Zach Pearson, Ebenezer Anjorin, Sudeep Gandhe, Ilya Eckstein, Jim Rosswog, Sumit Sanghai, Michael Pohl, Larry Adams and D. Sivakumar.</authors>
+    <title>ShopTalk: A System for Conversational Faceted Search.</title>
+    <booktitle>arXiv preprint arXiv:2109.00702</booktitle>
+    <month></month>
+    <year>2021</year>
+    <url>https://arxiv.org/pdf/2109.00702.pdf</url>
+    <abstract>We present ShopTalk, a multi-turn conversational faceted search system for shopping that is designed to handle large and complex schemas that are beyond the scope of state of the art slot-filling systems. ShopTalk decouples dialog management from fulfillment, thereby allowing the dialog understanding system to be domain-agnostic and not tied to the particular shopping application. The dialog understanding system consists of a deep-learned Contextual Language Understanding module, which interprets user utterances, and a primarily rules-based Dialog-State Tracker (DST), which updates the dialog state and formulates search requests intended for the fulfillment engine. The interface between the two modules consists of a minimal set of domain-agnostic "intent operators," which instruct the DST on how to update the dialog state. ShopTalk was deployed in 2020 on the Google Assistant for Shopping searches.</abstract>
+  </publication>
+  <publication>
+    <authors>Yury Zemlyanskiy, Sudeep Gandhe, Ruining He, Bhargav Kanagal, Anirudh Ravula, Juraj Gottweis, Fei Sha and Ilya Eckstein.</authors>
+    <title>DOCENT: Learning Self-Supervised Entity Representations from Large Document Collections.</title>
+    <booktitle>Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics.</booktitle>
+    <month></month>
+    <year>2021</year>
+    <url>https://aclanthology.org/2021.eacl-main.217.pdf</url>
+    <abstract>This paper explores learning rich selfsupervised entity representations from large amounts of associated text. Once pre-trained, these models become applicable to multiple entity-centric tasks such as ranked retrieval, knowledge base completion, question answering, and more. Unlike other methods that harvest self-supervision signals based merely on a local context within a sentence, we radically expand the notion of context to include any available text related to an entity. This enables a new class of powerful, highcapacity representations that can ultimately distill much of the useful information about an entity from multiple text sources, without any human supervision. We present several training strategies that, unlike prior approaches, learn to jointly predict words and entities—strategies we compare experimentally on downstream tasks in the TVMovies domain, such as MovieLens tag prediction from user reviews and natural language movie search. As evidenced by results, our models match or outperform competitive baselines, sometimes with little or no fine-tuning, and can scale to very large corpora. Finally, we make our datasets and pre-trained models publicly available. This includes Reviews2Movielens, mapping the ∼1B word corpus of Amazon movie reviews (He and McAuley, 2016) to MovieLens tags (Harper and Konstan, 2016), as well as Reddit Movie Suggestions with natural language queries and corresponding community recommendations.</abstract>
+  </publication>
+  <publication>
     <authors>Sudeep Gandhe and David Traum</authors>
-	  <title>SAWDUST: a Semi-Automated Wizard Dialogue Utterance Selection Tool for domain-independent large-domain dialogue</title>
-	  <booktitle>Proceedings of the 15th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL)</booktitle>
+    <title>SAWDUST: a Semi-Automated Wizard Dialogue Utterance Selection Tool for domain-independent large-domain dialogue</title>
+    <booktitle>Proceedings of the 15th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL)</booktitle>
     <month>June</month>
     <year>2014</year>
     <url>publications/GandheTraum-2014-sawdust.pdf</url>
     <abstract>We present a tool that allows human wizards to select appropriate response utterances for a given dialogue context from a set of utterances observed in a dialogue corpus. Such a tool can be used in Wizard-of-Oz studies and for collecting data which can be used for training and/or evaluating automatic dialogue models. We also propose to incorporate such automatic dialogue models back into the tool as an aid in selecting utterances from a large dialogue corpus. The tool allows a user to rank candidate utterances for selection according to these automatic models.</abstract>
-   </publication>
+  </publication>
 
-   <publication>
+  <publication>
     <authors>Sudeep Gandhe and David Traum</authors>
-	  <title>A semi-automated evaluation metric for dialogue model coherence</title>
-	  <booktitle>Fifth International Workshop on Spoken Dialogue systems</booktitle>
+    <title>A semi-automated evaluation metric for dialogue model coherence</title>
+    <booktitle>Fifth International Workshop on Spoken Dialogue systems</booktitle>
     <month>Jan</month>
     <year>2014</year>
     <url>publications/GandheTraum-2014-coherence.pdf</url>
     <abstract>We propose a new metric, Voted Appropriateness, which can be used to automatically evaluate dialogue policy decisions, once some wizard data has been collected. We show that this metric outperforms a previously proposed metric Weak agreement.We also present a taxonomy for dialogue model evaluation schemas, and orient our new metric within this taxonomy.</abstract>
-   </publication>
+  </publication>
 
-   <publication>
-     <authors>Sudeep Gandhe and David Traum.</authors>
-     <title>Surface Text based Dialogue Models for Virtual Humans</title>
-     <booktitle>14th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL)</booktitle>
-     <location>Metz, France</location>
-     <month>August</month>
-     <year>2013</year>
-     <url>publications/GandheTraum2013.pdf</url>
-     <abstract>We present virtual human dialogue models which primarily operate on the surface text level and can be extended to incorporate additional information state annotations such as topics or results from simpler models. We compare these models with previously proposed models as well as two human-level upper baselines. The models are evaluated by collecting appropriateness judgments from human judges for responses generated for a set of fixed dialogue contexts. Our results show that the best performing models achieve close to human-level performance and require only surface text dialogue transcripts to train.</abstract>
-   </publication>
+  <publication>
+    <authors>Sudeep Gandhe and David Traum.</authors>
+    <title>Surface Text based Dialogue Models for Virtual Humans</title>
+    <booktitle>14th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL)</booktitle>
+    <location>Metz, France</location>
+    <month>August</month>
+    <year>2013</year>
+    <url>publications/GandheTraum2013.pdf</url>
+    <abstract>We present virtual human dialogue models which primarily operate on the surface text level and can be extended to incorporate additional information state annotations such as topics or results from simpler models. We compare these models with previously proposed models as well as two human-level upper baselines. The models are evaluated by collecting appropriateness judgments from human judges for responses generated for a set of fixed dialogue contexts. Our results show that the best performing models achieve close to human-level performance and require only surface text dialogue transcripts to train.</abstract>
+  </publication>
 
-   <publication>
-     <authors>Peter Khooshabeh, Sudeep Gandhe, Cade McCall, Jonathan Gratch, James Blascovich and David Traum.</authors>
-     <title>The effects of virtual agent humor and gaze behavior on human-virtual agent proxemics</title>
-     <booktitle>Proceedings of 11th International Conference on Intelligent Virtual Agents, IVA 2011</booktitle>
-     <location>Reykjavik, Iceland</location>
-     <month>September</month>
-     <year>2011</year>
-     <url>publications/Khooshabeh_et_al_IVA2011_humor.pdf</url>
-     <abstract>We study whether a virtual agent that delivers humor through verbal behavior can affect an individual's proxemic behavior towards the agent. Participants interacted with a virtual agent through natural language and, in a separate task, performed an embodied interpersonal interaction task in a virtual environment. The study used minimum distance as the dependent measure. Humor generated by the virtual agent through a text chat did not have any significant effects on the proxemic task. This is likely due to the experimental constraint of only allowing participants to interact with a disembodied agent through a textual chat dialogue.</abstract>
-   </publication>
+  <publication>
+    <authors>Peter Khooshabeh, Sudeep Gandhe, Cade McCall, Jonathan Gratch, James Blascovich and David Traum.</authors>
+    <title>The effects of virtual agent humor and gaze behavior on human-virtual agent proxemics</title>
+    <booktitle>Proceedings of 11th International Conference on Intelligent Virtual Agents, IVA 2011</booktitle>
+    <location>Reykjavik, Iceland</location>
+    <month>September</month>
+    <year>2011</year>
+    <url>publications/Khooshabeh_et_al_IVA2011_humor.pdf</url>
+    <abstract>We study whether a virtual agent that delivers humor through verbal behavior can affect an individual's proxemic behavior towards the agent. Participants interacted with a virtual agent through natural language and, in a separate task, performed an embodied interpersonal interaction task in a virtual environment. The study used minimum distance as the dependent measure. Humor generated by the virtual agent through a text chat did not have any significant effects on the proxemic task. This is likely due to the experimental constraint of only allowing participants to interact with a disembodied agent through a textual chat dialogue.</abstract>
+  </publication>
 
-   <publication>
-     <authors>Sudeep Gandhe, Michael Rushforth, Priti Aggarwal and David Traum.</authors>
-     <title>Evaluation of an Integrated Authoring Tool for Building Advanced Question-Answering Characters.</title>
-     <booktitle>Proceedings of Interspeech-11</booktitle>
-     <location>Florence, Italy</location>
-     <month>August</month>
-     <year>2011</year>
-     <url>publications/p84046.pdf</url>
-     <abstract>We present the evaluation of an integrated authoring tool for rapid prototyping of dialogue systems. These dialogue systems are designed to support virtual humans engaging in advanced question-answering dialogues, such as for training tactical questioning skills. The tool was designed to help non- experts, who may have little or no knowledge of linguistics or computer science, build virtual characters that can play the role of an interviewee. The tool has been successfully used by several different non-experts to create a number of virtual characters used successfully for both training and human subjects testing. We report on experiences with seven such characters, whose development time was as little as two weeks including concept development and a round of user testing.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Ron Artstein, Michael Rushforth, Sudeep Gandhe, David Traum and Aram Donigian.</authors>
-     <title>Limits of Simple Dialogue Acts for Tactical Questioning Dialogues.</title>
-     <booktitle>Proceedings of 7th IJCAI workshop on Knowledge and Reasoning in Practical Dialogue Systems</booktitle>
-     <location>Barcelona, Catalonia (Spain)</location>
-     <month>July</month>
-     <year>2011</year>
-     <url>publications/tacq-limits.pdf</url>
-     <abstract>A set of dialogue acts, generated automatically by applying a dialogue act scheme to a domain representation designed for easy scenario authoring, covers approximately 72%-76% of user utterances spoken in live interaction with a tactical questioning simulation trainer. The domain is represented as facts of the form &lt;object, attribute, value&gt; and conversational actions of the form &lt;character, action&gt;. User utterances from the corpus that fall outside the scope of the scheme include questions about temporal relations, relations between facts and relations between objects, questions about reason and evidence, assertions by the user, conditional offers, attempts to set the topic of conversation, and compound utterances. These utterance types constitute the limits of the simple dialogue act scheme.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Sudeep Gandhe, Alysa Taylor, Jillian Gerten and David Traum.</authors>
-     <title>Rapid Development of Advanced Question-Answering Characters by Non-experts.</title>
-     <booktitle>Demo to be presented at SIGdial 2011</booktitle>
-     <location>Portland, Oregon</location>
-     <month>June</month>
-     <year>2011</year>
-     <url>publications/tacq-demo.pdf</url>
-     <abstract>We demonstrate a dialogue system and the accompanying authoring tools that are designed to allow authors with little or no experience in building dialogue systems to rapidly build advanced question-answering characters. To date seven such virtual characters have been built by non-experts using this architecture and tools. Here we demonstrate one such character, PFC Sean Avery, which was developed by a non-expert in 3 months.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Peter Khooshabeh, Cade McCall, Sudeep Gandhe, Jonathan Gratch and James Blascovich.</authors>
-     <title>Does it matter if a computer jokes?</title>
-     <booktitle>Proceedings of the 2011 annual conference extended abstracts on Human factors in computing systems, CHI EA '11</booktitle>
-     <location>Vancouver, BC</location>
-     <month>
-     </month>
-     <year>2011</year>
-     <url>publications/Khooshabeh_et_al_2011_humor.pdf</url>
-     <abstract>“We need oxygen, especially if someone farts!” The goal here was to determine whether computer interfaces are capable of social influence via humor. Users interacted with a natural language capable virtual agent that told persuasive information, and they were given the option to use information from the dialogue in order to complete a problem-solving task. Individuals interacting with an ostensibly humorous virtual agent were influenced by it such that those who judged the agent unfunny were less likely to be persuaded and departed from the agent‟s suggestions. We discuss the implications of these results for HCI involving natural language systems and virtual agents.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Sudeep Gandhe and David Traum.</authors>
-     <title>I've said it before, and I'll say it again: An empirical investigation of the upper bound of the selection approach to dialogue.</title>
-     <booktitle>Proceedings of the SIGdial 2010 Conference</booktitle>
-     <location>Tokyo, Japan</location>
-     <month>
-     </month>
-     <year>2010</year>
-     <url>publications/http://www.sigdial.org/workshops/workshop11/proc/pdf/SIGDIAL45.pdf</url>
-     <abstract>We perform a study of existing dialogue corpora to establish the theoretical maximum performance of the selection approach to simulating human dialogue behavior in unseen dialogues. This maximum is the proportion of test utterances for which an exact or approximate match exists in the corresponding training corpus. The results indicate that some domains seem quite suitable for a corpus based selection approach, with over half of the test utterances having been seen before in the corpus, while other domains show much more novelty compared to previous dialogues.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Michael Rushforth, Sudeep Gandhe, Ron Artstein , Antonio Roque, Sarrah Ali, Nicolle Whitman and David Traum.</authors>
-     <title>Varying Personality in Spoken Dialogue with a Virtual Human.</title>
-     <booktitle>Intelligent Virtual Humans Conference (IVA-09), Lecture Notes in Artificial Intelligence Vol. 5733</booktitle>
-     <location>Amsterdam</location>
-     <month></month>
-     <year>2009</year>
-     <url>publications/tacq-personality-abstract.pdf</url>
-     <abstract></abstract>
-   </publication>
-   
-   <publication>
-     <authors>Michael Rushforth, Sudeep Gandhe, Ron Artstein , Antonio Roque, Sarrah Ali, Nicolle Whitman and David Traum.</authors>
-     <title>Varying Personality in Spoken Dialogue with a Virtual Human.</title>
-     <booktitle>USC-ICT Technical Report, ICT-TR-03-2009</booktitle>
-     <location>
-     </location>
-     <month>September</month>
-     <year>2009</year>
-     <url>publications/http://ict.usc.edu/files/publications/ICT-TR-03-2009_tacq-personality.pdf</url>
-     <abstract>We extend a virtual human architecture that has been used to build tactical questioning characters with a parameterizable personality model, allowing characters to be designed with different personalities, allowing a richer set of possible user interactions in a training environment. Two experiments were carried out to evaluate the framework. In the first, it was determined that personality models do have an impact on user perception of several aspects of the personality of the character. In the second, a model of assertiveness was evaluated and found to have a small but significant impact on the users who interacted with the full virtual human, and larger differences in judgment of annotators who examined only the verbal transcripts of the interaction.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Ron Artstein, Sudeep Gandhe, Jillian Gerten, Anton Leuski and David Traum.</authors>
-     <title>Semi-formal evaluation of conversational characters.</title>
-     <booktitle>In Languages: From Formal to Natural. Essays Dedicated to Nissim Francez on the Occasion of His 65th Birthday  (Lecture Notes in Computer Science 5533)</booktitle>
-     <editors>Orna Grumberg, Michael Kaminski, Shmuel Katz and Shuly Wintner</editors>
-     <pages>22-35</pages>
-     <publisher>Springer</publisher>
-     <address>Heidelberg</address>
-     <month>
-     </month>
-     <year>2009</year>
-     <url>publications/Artstein_Semi-formal_Evaluation_of_Conversation_Characters.pdf</url>
-     <abstract>Conversational dialogue systems cannot be evaluated in a fully formal manner, because dialogue is heavily dependent on context and current dialogue theory is not precise enough to specify a target output ahead of time. Instead, we evaluate dialogue systems in a semi-formal manner, using human judges to rate the coherence of a conversational character and correlating these judgments with measures extracted from within the system. We present a series of three evaluations of a single conversational character over the course of a year, demonstrating how this kind of evaluation helps bring about an improvement in overall dialogue coherence.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Sudeep Gandhe, Nicolle Whitman, David Traum and Ron Artstein.</authors>
-     <title>An Integrated Authoring Tool for Tactical Questioning Dialogue Systems.</title>
-     <booktitle>6th Workshop on Knowledge and Reasoning in Practical dialogue Systems</booktitle>
-     <location>Pasadena, California</location>
-     <month>July</month>
-     <year>2009</year>
-     <url>publications/paper_10.pdf</url>
-     <abstract>We present an integrated authoring tool for rapid prototyping of dialogue systems for virtual humans taking part in tactical questioning simulations. The tool helps domain experts, who may have little or no knowledge of linguistics or computer science, to build virtual characters that can play the role of the interviewee. Working in a top-down fashion, the authoring process begins with specifying a domain of knowledge for the character; the authoring tool generates all relevant dialogue acts and allows authors to assign the language that will be used to refer to the domain elements. The authoring tool can also be used to manipulate some aspects of the dialogue strategies employed by the virtual characters, and it also supports re-using some of the authored content across different characters.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Ron Artstein, Sudeep Gandhe, Michael Rushforth and David Traum.</authors>
-     <title>Viability of a Simple Dialogue Act Scheme for a Tactical Questioning Dialogue System.</title>
-     <booktitle>DiaHolmia 13th Workshop on the Semantics and Pragmatics of Dialogue.</booktitle>
-     <location>Stockholm, Sweden</location>
-     <month>June</month>
-     <year>2009</year>
-     <url>publications/tacq-semdial09.pdf</url>
-     <abstract>User utterances in a spoken dialogue system for tactical questioning simulation were matched to a set of dialogue acts generated automatically from a representation of facts as &lt;object, attribute, value&gt; triples and actions as &lt;character, action&gt; pairs. The representation currently covers about 50% of user utterances, and we show that a few extensions can increase coverage to 80% or more. This demonstrates the viability of simple schemes for representing question-answering dialogues in implemented systems.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Ron Artstein, Jacob Cannon, Sudeep Gandhe, Jillian Gerten, Joseph Henderer, Anton Leuski and David Traum.</authors>
-     <title>Coherence of Off-Topic Responses for a Virtual Character.</title>
-     <booktitle>26th Army Science Conference</booktitle>
-     <location>Florida</location>
-     <month>
-     </month>
-     <year>2008</year>
-     <url>publications/star_asc2008.pdf</url>
-     <abstract>We demonstrate three classes of off-topic responses which allow a virtual question-answering character to handle cases where it does not understand the user’s input: ask for clariﬁcation, indicate misunderstanding, and move on with the conversation. While falling short of full dialogue management, a combination of such responses together with prompts to change the topic can improve overall dialogue coherence.</abstract>
-   </publication>
-   
-   
-   <publication>
-     <authors>David Traum, Anton Leuksi, Antonio Roque, Sudeep Gandhe, David DeVault, Jillian Gerten, Susan Robinson and Bilyana Martinovski.</authors>
-     <title>Natural Language Dialogue Architectures for Tactical Questioning Characters</title>
-     <booktitle>26th Army Science Conference</booktitle>
-     <location>Florida</location>
-     <month>
-     </month>
-     <year>2008</year>
-     <url>publications/tacq_asc2008.pdf</url>
-     <abstract>In this paper we contrast three architectures for natural language questioning characters. We contrast the relative costs and benefits of each approach in building characters for tactical questioning. The first architecture works purely at the textual level, using cross-language information retrieval techniques to learn the best output for any input from a training set of linked questions and answers. The second architecture adds a global emotional model and computes a compliance model, which can result in different outputs for different levels, given the same inputs. The third architecture works at a semantic level and allows authoring of different policies for response for different kinds of information. We describe these architectures and their strengths and weaknesses with respect to expressive capacity, performance, and authoring demands.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Sudeep Gandhe, David DeVault, Antonio Roque, Bilyana Martinovski, Ron Artstein, Anton Leuski, Jillian Gerten and David Traum.</authors>
-     <title>From Domain Specification to Virtual Humans: An integrated approach to authoring tactical questioning characters.</title>
-     <booktitle>Proceedings of Interspeech-08</booktitle>
-     <location>Brisbane, Australia</location>
-     <month>
-     </month>
-     <year>2008</year>
-     <url>publications/tacq08.pdf</url>
-     <abstract>We present a new approach for rapidly developing dialogue capabilities for virtual humans. Starting from domain specification, an integrated authoring interface automatically generates dialogue acts with all possible contents. These dialogue acts are linked to example utterances in order to provide training data for natural language understanding and generation. The virtual human dialogue system contains a dialogue manager following the information-state approach, using finite-state machines and SCXML to manage local coherence, as well as explicit modeling of emotions and compliance level and a grounding component based on evidence of understanding. Using the authoring tools, we design and implement a version of the virtual human Hassan and compare to previous architectures for the character.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Sudeep Gandhe and David Traum.</authors>
-     <title>Evaluation Understudy for Dialogue Coherence Models.</title>
-     <booktitle>9th SIGdial Workshop on Discourse and Dialogue</booktitle>
-     <location>Ohio</location>
-     <month>
-     </month>
-     <year>2008</year>
-     <url>publications/sigdial08-evaluation-understudy.pdf</url>
-     <abstract>Evaluating a dialogue system is seen as a major challenge within the dialogue research community. Due to the very nature of the task, most of the evaluation methods need a substantial amount of human involvement. Following the tradition in machine translation, summarization and discourse coherence modeling, we introduce the the idea of evaluation understudy for dialogue coherence models. Following (Lapata, 2006), we use the information ordering task as a testbed for evaluating dialogue coherence models. This paper reports findings about the reliability of the information ordering task as applied to dialogues. We find that simple n-gram co-occurrence statistics similar in spirit to BLEU (Papineni et al., 2001) correlate very well with human judgments for dialogue coherence.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Tim Paek, Sudeep Gandhe and David Maxwell Chickering.</authors>
-     <title>Rapidly Deploying Grammar-Based Speech Applications with Active Learning and Back-off Grammars.</title>
-     <booktitle>9th SIGdial Workshop on Discourse and Dialogue</booktitle>
-     <location>Ohio</location>
-     <month>May</month>
-     <year>2008</year>
-     <url>publications/sigdial08-activeLearning.pdf</url>
-     <abstract>Grammar-based  approaches to spoken language understanding are utilized to a great extent in industry, particularly when developers are confronted with data sparsity.  In order to ensure wide grammar coverage, developers typically modify their grammars in  an iterative process of deploying the application, collecting and transcribing user utterances, and adjusting the grammar.  In this paper, we explore enhancing this iterative process by leveraging active learning with back-off grammars.  Because the back-off grammars expand coverage of  user  utterances, developers have a safety net for deploying applications earlier. Furthermore, the statistics related to the back-off can be used for active learning, thus  reducing the effort and cost of data transcription.  In experiments conducted on a commercially deployed application, the approach achieved levels of semantic accuracy comparable  to transcribing all  failed  utterances with 87% less transcriptions.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Ron Artstein, Sudeep Gandhe, Anton Leuski, and David Traum.</authors>
-     <title>Field Testing of an Interactive Question-Answering Character.</title>
-     <booktitle>Proceedings of ELRA Workshop on Evaluation, LREC</booktitle>
-     <location>Marrakech, Morocco</location>
-     <month>
-     </month>
-     <year>2008</year>
-     <url>publications/star_evaluation-web.pdf</url>
-     <abstract>We tested a life-size embodied question-answering character at a convention where he responded to questions from the audience. The character's responses were then rated for coherence. The ratings, combined with speech transcripts, speech recognition results and the character's responses, allowed us to identify where the character needs to improve, namely in speech recognition and providing off-topic responses. </abstract>
-   </publication>
-   
-   <publication>
-     <authors>Sudeep Gandhe and David Traum.</authors>
-     <title>Creating Spoken Dialogue Characters from Corpora without Annotations</title>
-     <booktitle>Proceedings of Interspeech-07</booktitle>
-     <location>Antwerp, Belgium</location>
-     <month>
-     </month>
-     <year>2007</year>
-     <url>publications/p1186.pdf</url>
-     <abstract>Virtual humans are being used in a number of applications, including simulation-based training, multi-player games, and museum kiosks. Natural language dialogue capabilities are an essential part of their human-like persona. These dialogue systems have a goal of being believable and generally have to operate within the bounds of their restricted domains. Most dialogue systems operate on a dialogue-act level and require extensive annotation efforts. Semantic annotation and rule authoring have long been known as bottlenecks for developing dialogue systems for new domains. In this paper, we investigate several dialogue models for virtual humans that are trained on an unannotated human-human corpus. These are inspired by information retrieval and work on the surface text level. We evaluate these in text-based and spoken interactions and also against the upper baseline of human-human dialogues.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Tim Paek, Sudeep Gandhe, David Maxwell Chickering and Yun Cheng Ju.</authors>
-     <title>Handling out-of-grammar commands in mobile speech interaction using backoff filler models.</title>
-     <booktitle>Proceedings of the ACL Workshop on Grammar-Based Approaches to Spoken Language Processing (SPEECHGRAM)</booktitle>
-     <location>Prague, Czech Replublic</location>
-     <month>June</month>
-     <year>2007</year>
-     <url>publications/paek_speechgram_07.pdf</url>
-     <abstract>In command and control (C&amp;C) speech interaction, users interact by speaking commands or asking questions typically specified in a context-free grammar (CFG). Unfortunately, users often produce out-of grammar (OOG) commands, which can result in misunderstanding or nonunderstanding.  We explore a simple approach to handling OOG commands that involves generating a backoff grammar from any CFG using filler models, and utilizing that grammar for recognition whenever the CFG fails.  Working within the memory footprint requirements of a mobile C&amp;C product, applying the approach yielded a 35% relative reduction in semantic error rate for OOG commands.  It also improved partial recognitions for enabling clarification dialogue.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Sudeep Gandhe and David Traum.</authors>
-     <title>First Steps towards Dialogue Modeling from an Un-annotated Human-Human Corpus.</title>
-     <booktitle>5th Workshop on knowledge and reasoning in practical dialogue systems</booktitle>
-     <location>Hyderabad, India</location>
-     <month>Jan</month>
-     <year>2007</year>
-     <url>publications/gandhe-krpd07.pdf</url>
-     <abstract>Virtual human characters equipped with natural language dialogue capability have proved useful in many fields like simulation training and interactive games. Generally behind such dialogue managers lies a complex knowledge-rich rule-based system. Building such system involves meticulous annotation of data and hand authoring of rules. In this paper we build a statistical dialogue model from roleplay and wizard of oz dialog corpus with virtually no annotation. We compare these methods with the traditional approaches. We have evaluated these systems for perceived appropriateness of response and the results are presented here.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Sudeep Gandhe, Andrew S Gordon and David Traum.</authors>
-     <title>Improving Question-Answering with Linking Dialogues</title>
-     <booktitle>2006 International Conference on Intelligent User Interfaces</booktitle>
-     <location>Sydney, Australia</location>
-     <month>Jan</month>
-     <year>2006</year>
-     <url>publications/p369-gandhe.pdf</url>
-     <abstract>Question-answering dialogue systems have found many applications in interactive learning environments. This paper is concerned with one such application for Army leadership training, where trainees input free-text questions that elicit pre-recorded video responses. Since these responses are already crafted before the question is asked, a certain degree of incoherence exists between the question that is asked and the answer that is given. This paper explores the use of short linking dialogues that stand in between the question and its video response to alleviate the problem of incoherence. We describe a set of experiments with human generated linking dialogues that demonstrate their added value. We then describe our implementation of an automated method for utilizing linking dialogues and show that these have better coherence properties than  the original system without linking dialogues.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Randall Hill, Julia Kim, Michelle Zbylut, Andrew S Gordon, David Traum, Sudeep Gandhe, Stewart King, Salvo Lavis and Scott Rocher.</authors>
-     <title>AXL.Net: Web-enabled Case Method Instruction for Accelerating Tacit Knowledge Acquisition in Leaders</title>
-     <booktitle>25th Army Sceince Conference</booktitle>
-     <location>Orlando, Florida</location>
-     <month>
-     </month>
-     <year>2006</year>
-     <url>publications/ASC06.pdf</url>
-     <abstract>AXL.Net is a prototype web-based immersive technology solution that supports case method teaching for U.S. Army leader development. The AXL.Net system addresses three challenges: (1) designing a pedagogically sound research prototype for leader development, (2) integrating research technologies with the best of Web 2.0 innovations to enhance case method teaching, and (3) providing an easy to use system. Initial evaluations show that the prototype application and framework is effective for leader development.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Sudeep Gandhe, Andrew Gordon, Anton Leuski, David R Traum, and Douglas W. Oard.</authors>
-     <title>First Steps toward Linking Dialogues: mediating between free-text questions and pre-recorded video answers.</title>
-     <booktitle>24th Army Science Conference</booktitle>
-     <location>Orlando, Florida</location>
-     <month>
-     </month>
-     <year>2004</year>
-     <url>publications/asc2004.pdf</url>
-     <abstract>Pre-recorded video segments can be very compelling for a variety of immersive training purposes, including providing answers to questions in after-action reviews. Answering questions fluently using pre-recorded video poses challenges, however. When humans interact, answers are constructed after questions are posed. When answers are pre-recorded, even if a correct answer exists in a library of video segments, the answer may be phrased in a way that is not coherent with the question. This paper reports on basic research experiments with short “linking dialogues” that mediate between the question and answer to reduce (or eliminate) the incoherence, resulting in more natural human-system interaction. A set of experiments were performed in which links were elicited to bridge between questions from users of an existing training application and selected answers from the system, and then comparisons made with unlinked answers. The results show that a linking dialogue can significantly increase the perceived relevance of the system's answers.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Robert Belvin, Emil Ettelaie, Sudeep Gandhe, Panayiotis Georgiou, Kevin Knight, Daniel Marcu, Scott Millward, Shrikanth Narayanan, Howard Neely and David Traum</authors>
-     <title>Transonics: A Practical Speech-to-Speech Translator for English-Farsi Medical Dialogs.</title>
-     <booktitle>Demo presented at ACL Interactive Poster and Demonstration Sessions</booktitle>
-     <location>
-     </location>
-     <month>June</month>
-     <year>2005</year>
-     <url>publications/p89-ettelaie.pdf</url>
-     <abstract>We briefly describe a two-way speech-to-speech  English-Farsi  translation  system prototype  developed  for  use  in  doctor-patient  interactions.   The  overarching philosophy  of the  developers  has  been to create  a  system  that  enables  effective communication,  rather  than  focusing  on maximizing  component-level  performance.   The discussion focuses on the general  approach  and  evaluation  of  the system  by  an  independent  government evaluation team.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>S. Narayanan, S. Ananthakrishnan, R. Belvin, E. Ettelaie, S. Gandhe, S. Ganjavi, P. G. Georgiou, C. M. Hein, S. Kadambe, K. Knight, D. Marcu, H. E. Neely, N. Srinivasamurthy, D. Traum and D. Wang.</authors>
-     <title>The Transonics Spoken Dialogue Translator: An aid for English-Persian Doctor-Patient interviews.</title>
-     <booktitle>In working notes of the AAAI Fall symposium on Dialogue Systems for Health Communication</booktitle>
-     <location>
-     </location>
-     <month>
-     </month>
-     <year>2004</year>
-     <pages>97-103</pages>
-     <url>publications/Transonics-AAAI-04.pdf</url>
-     <abstract>In this paper we describe our spoken english-persian medical dialogue translation system. We describe the data collection effort and give an overview of the component technologies, including speech recognition, translation, dialogue management, and user interface design. The individual modules and system are designed for flexibility, and to be able to leverage different amounts of available resources to maximize the ability for communication between medical care-giver and patient.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>David Traum, William Swartout, Jonathan Gratch, Stacy Marsella, Patrick Kenny, Eduard Hovy, Shri Narayanan, Ed Fast, Bilyana Martinovski, Rahul Baghat, Susan Robinson, Andrew Marshall, Dagen Wang, Sudeep Gandhe and Anton Leuski</authors>
-     <title>Dealing with Doctors: A Virtual Human for Non-team Interaction.</title>
-     <booktitle>Demo presented at SIGdial-05</booktitle>
-     <location>
-     </location>
-     <month>September</month>
-     <year>2005</year>
-     <url>publications/SIGdial-SASO-demo.pdf</url>
-     <abstract>We present a virtual human doctor who can engage in multi-modal negotiation dialogue with people from other organizations. The doctor is part of the SASO-ST system, used for training for non-team interactions.</abstract>
-   </publication>
-   
-   <publication>
-     <authors>Paul Scerri, David Pynadath, Nathan Schurr, Alessandro Farinelli, Sudeep Gandhe and Milind Tambe.</authors>
-     <title>Team-oriented programming and proxy agents: the next generation</title>
-     <booktitle>Proceedings of the workshop on Programming multiagent systems, Lecture notes in computer science</booktitle>
-     <location>
-     </location>
-     <editors>M.Dastani, J.Dix</editors>
-     <publisher>
-     </publisher>
-     <month>
-     </month>
-     <year>2004</year>
-     <url>publications/scerri_et_al_04.pdf</url>
-     <abstract>Coordination between large teams of highly heterogeneous entities will change the way complex goals are pursued in real world environments. One approach to achieving the required coordination in such teams is to give each team member a proxy that assumes routine coordination activities on behalf of its team member. Despite that approach's success, as we attempt to apply this first generation of proxy architecture to larger teams in more challenging environments, some limitations become clear. In this paper, we present initial efforts on the next generation of proxy architecture and Team Oriented Programming (TOP), called Machinetta. Machinetta aims to overcome the limitations of the previous generation of proxies and allow effective coordination between very large teams of highly heterogeneous agents. We describe the principles underlying the design of the Machinetta proxies and present initial results from two domains.</abstract>
-   </publication>
-   
- </publications>
+  <publication>
+    <authors>Sudeep Gandhe, Michael Rushforth, Priti Aggarwal and David Traum.</authors>
+    <title>Evaluation of an Integrated Authoring Tool for Building Advanced Question-Answering Characters.</title>
+    <booktitle>Proceedings of Interspeech-11</booktitle>
+    <location>Florence, Italy</location>
+    <month>August</month>
+    <year>2011</year>
+    <url>publications/p84046.pdf</url>
+    <abstract>We present the evaluation of an integrated authoring tool for rapid prototyping of dialogue systems. These dialogue systems are designed to support virtual humans engaging in advanced question-answering dialogues, such as for training tactical questioning skills. The tool was designed to help non- experts, who may have little or no knowledge of linguistics or computer science, build virtual characters that can play the role of an interviewee. The tool has been successfully used by several different non-experts to create a number of virtual characters used successfully for both training and human subjects testing. We report on experiences with seven such characters, whose development time was as little as two weeks including concept development and a round of user testing.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Ron Artstein, Michael Rushforth, Sudeep Gandhe, David Traum and Aram Donigian.</authors>
+    <title>Limits of Simple Dialogue Acts for Tactical Questioning Dialogues.</title>
+    <booktitle>Proceedings of 7th IJCAI workshop on Knowledge and Reasoning in Practical Dialogue Systems</booktitle>
+    <location>Barcelona, Catalonia (Spain)</location>
+    <month>July</month>
+    <year>2011</year>
+    <url>publications/tacq-limits.pdf</url>
+    <abstract>A set of dialogue acts, generated automatically by applying a dialogue act scheme to a domain representation designed for easy scenario authoring, covers approximately 72%-76% of user utterances spoken in live interaction with a tactical questioning simulation trainer. The domain is represented as facts of the form &lt;object, attribute, value&gt; and conversational actions of the form &lt;character, action&gt;. User utterances from the corpus that fall outside the scope of the scheme include questions about temporal relations, relations between facts and relations between objects, questions about reason and evidence, assertions by the user, conditional offers, attempts to set the topic of conversation, and compound utterances. These utterance types constitute the limits of the simple dialogue act scheme.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Sudeep Gandhe, Alysa Taylor, Jillian Gerten and David Traum.</authors>
+    <title>Rapid Development of Advanced Question-Answering Characters by Non-experts.</title>
+    <booktitle>Demo to be presented at SIGdial 2011</booktitle>
+    <location>Portland, Oregon</location>
+    <month>June</month>
+    <year>2011</year>
+    <url>publications/tacq-demo.pdf</url>
+    <abstract>We demonstrate a dialogue system and the accompanying authoring tools that are designed to allow authors with little or no experience in building dialogue systems to rapidly build advanced question-answering characters. To date seven such virtual characters have been built by non-experts using this architecture and tools. Here we demonstrate one such character, PFC Sean Avery, which was developed by a non-expert in 3 months.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Peter Khooshabeh, Cade McCall, Sudeep Gandhe, Jonathan Gratch and James Blascovich.</authors>
+    <title>Does it matter if a computer jokes?</title>
+    <booktitle>Proceedings of the 2011 annual conference extended abstracts on Human factors in computing systems, CHI EA '11</booktitle>
+    <location>Vancouver, BC</location>
+    <month></month>
+    <year>2011</year>
+    <url>publications/Khooshabeh_et_al_2011_humor.pdf</url>
+    <abstract>“We need oxygen, especially if someone farts!” The goal here was to determine whether computer interfaces are capable of social influence via humor. Users interacted with a natural language capable virtual agent that told persuasive information, and they were given the option to use information from the dialogue in order to complete a problem-solving task. Individuals interacting with an ostensibly humorous virtual agent were influenced by it such that those who judged the agent unfunny were less likely to be persuaded and departed from the agent‟s suggestions. We discuss the implications of these results for HCI involving natural language systems and virtual agents.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Sudeep Gandhe and David Traum.</authors>
+    <title>I've said it before, and I'll say it again: An empirical investigation of the upper bound of the selection approach to dialogue.</title>
+    <booktitle>Proceedings of the SIGdial 2010 Conference</booktitle>
+    <location>Tokyo, Japan</location>
+    <month></month>
+    <year>2010</year>
+    <url>publications/http://www.sigdial.org/workshops/workshop11/proc/pdf/SIGDIAL45.pdf</url>
+    <abstract>We perform a study of existing dialogue corpora to establish the theoretical maximum performance of the selection approach to simulating human dialogue behavior in unseen dialogues. This maximum is the proportion of test utterances for which an exact or approximate match exists in the corresponding training corpus. The results indicate that some domains seem quite suitable for a corpus based selection approach, with over half of the test utterances having been seen before in the corpus, while other domains show much more novelty compared to previous dialogues.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Michael Rushforth, Sudeep Gandhe, Ron Artstein , Antonio Roque, Sarrah Ali, Nicolle Whitman and David Traum.</authors>
+    <title>Varying Personality in Spoken Dialogue with a Virtual Human.</title>
+    <booktitle>Intelligent Virtual Humans Conference (IVA-09), Lecture Notes in Artificial Intelligence Vol. 5733</booktitle>
+    <location>Amsterdam</location>
+    <month></month>
+    <year>2009</year>
+    <url>publications/tacq-personality-abstract.pdf</url>
+    <abstract></abstract>
+  </publication>
+
+  <publication>
+    <authors>Michael Rushforth, Sudeep Gandhe, Ron Artstein , Antonio Roque, Sarrah Ali, Nicolle Whitman and David Traum.</authors>
+    <title>Varying Personality in Spoken Dialogue with a Virtual Human.</title>
+    <booktitle>USC-ICT Technical Report, ICT-TR-03-2009</booktitle>
+    <location></location>
+    <month>September</month>
+    <year>2009</year>
+    <url>publications/http://ict.usc.edu/files/publications/ICT-TR-03-2009_tacq-personality.pdf</url>
+    <abstract>We extend a virtual human architecture that has been used to build tactical questioning characters with a parameterizable personality model, allowing characters to be designed with different personalities, allowing a richer set of possible user interactions in a training environment. Two experiments were carried out to evaluate the framework. In the first, it was determined that personality models do have an impact on user perception of several aspects of the personality of the character. In the second, a model of assertiveness was evaluated and found to have a small but significant impact on the users who interacted with the full virtual human, and larger differences in judgment of annotators who examined only the verbal transcripts of the interaction.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Ron Artstein, Sudeep Gandhe, Jillian Gerten, Anton Leuski and David Traum.</authors>
+    <title>Semi-formal evaluation of conversational characters.</title>
+    <booktitle>In Languages: From Formal to Natural. Essays Dedicated to Nissim Francez on the Occasion of His 65th Birthday  (Lecture Notes in Computer Science 5533)</booktitle>
+    <editors>Orna Grumberg, Michael Kaminski, Shmuel Katz and Shuly Wintner</editors>
+    <pages>22-35</pages>
+    <publisher>Springer</publisher>
+    <address>Heidelberg</address>
+    <month></month>
+    <year>2009</year>
+    <url>publications/Artstein_Semi-formal_Evaluation_of_Conversation_Characters.pdf</url>
+    <abstract>Conversational dialogue systems cannot be evaluated in a fully formal manner, because dialogue is heavily dependent on context and current dialogue theory is not precise enough to specify a target output ahead of time. Instead, we evaluate dialogue systems in a semi-formal manner, using human judges to rate the coherence of a conversational character and correlating these judgments with measures extracted from within the system. We present a series of three evaluations of a single conversational character over the course of a year, demonstrating how this kind of evaluation helps bring about an improvement in overall dialogue coherence.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Sudeep Gandhe, Nicolle Whitman, David Traum and Ron Artstein.</authors>
+    <title>An Integrated Authoring Tool for Tactical Questioning Dialogue Systems.</title>
+    <booktitle>6th Workshop on Knowledge and Reasoning in Practical dialogue Systems</booktitle>
+    <location>Pasadena, California</location>
+    <month>July</month>
+    <year>2009</year>
+    <url>publications/paper_10.pdf</url>
+    <abstract>We present an integrated authoring tool for rapid prototyping of dialogue systems for virtual humans taking part in tactical questioning simulations. The tool helps domain experts, who may have little or no knowledge of linguistics or computer science, to build virtual characters that can play the role of the interviewee. Working in a top-down fashion, the authoring process begins with specifying a domain of knowledge for the character; the authoring tool generates all relevant dialogue acts and allows authors to assign the language that will be used to refer to the domain elements. The authoring tool can also be used to manipulate some aspects of the dialogue strategies employed by the virtual characters, and it also supports re-using some of the authored content across different characters.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Ron Artstein, Sudeep Gandhe, Michael Rushforth and David Traum.</authors>
+    <title>Viability of a Simple Dialogue Act Scheme for a Tactical Questioning Dialogue System.</title>
+    <booktitle>DiaHolmia 13th Workshop on the Semantics and Pragmatics of Dialogue.</booktitle>
+    <location>Stockholm, Sweden</location>
+    <month>June</month>
+    <year>2009</year>
+    <url>publications/tacq-semdial09.pdf</url>
+    <abstract>User utterances in a spoken dialogue system for tactical questioning simulation were matched to a set of dialogue acts generated automatically from a representation of facts as &lt;object, attribute, value&gt; triples and actions as &lt;character, action&gt; pairs. The representation currently covers about 50% of user utterances, and we show that a few extensions can increase coverage to 80% or more. This demonstrates the viability of simple schemes for representing question-answering dialogues in implemented systems.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Ron Artstein, Jacob Cannon, Sudeep Gandhe, Jillian Gerten, Joseph Henderer, Anton Leuski and David Traum.</authors>
+    <title>Coherence of Off-Topic Responses for a Virtual Character.</title>
+    <booktitle>26th Army Science Conference</booktitle>
+    <location>Florida</location>
+    <month></month>
+    <year>2008</year>
+    <url>publications/star_asc2008.pdf</url>
+    <abstract>We demonstrate three classes of off-topic responses which allow a virtual question-answering character to handle cases where it does not understand the user’s input: ask for clariﬁcation, indicate misunderstanding, and move on with the conversation. While falling short of full dialogue management, a combination of such responses together with prompts to change the topic can improve overall dialogue coherence.</abstract>
+  </publication>
+
+
+  <publication>
+    <authors>David Traum, Anton Leuksi, Antonio Roque, Sudeep Gandhe, David DeVault, Jillian Gerten, Susan Robinson and Bilyana Martinovski.</authors>
+    <title>Natural Language Dialogue Architectures for Tactical Questioning Characters</title>
+    <booktitle>26th Army Science Conference</booktitle>
+    <location>Florida</location>
+    <month></month>
+    <year>2008</year>
+    <url>publications/tacq_asc2008.pdf</url>
+    <abstract>In this paper we contrast three architectures for natural language questioning characters. We contrast the relative costs and benefits of each approach in building characters for tactical questioning. The first architecture works purely at the textual level, using cross-language information retrieval techniques to learn the best output for any input from a training set of linked questions and answers. The second architecture adds a global emotional model and computes a compliance model, which can result in different outputs for different levels, given the same inputs. The third architecture works at a semantic level and allows authoring of different policies for response for different kinds of information. We describe these architectures and their strengths and weaknesses with respect to expressive capacity, performance, and authoring demands.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Sudeep Gandhe, David DeVault, Antonio Roque, Bilyana Martinovski, Ron Artstein, Anton Leuski, Jillian Gerten and David Traum.</authors>
+    <title>From Domain Specification to Virtual Humans: An integrated approach to authoring tactical questioning characters.</title>
+    <booktitle>Proceedings of Interspeech-08</booktitle>
+    <location>Brisbane, Australia</location>
+    <month></month>
+    <year>2008</year>
+    <url>publications/tacq08.pdf</url>
+    <abstract>We present a new approach for rapidly developing dialogue capabilities for virtual humans. Starting from domain specification, an integrated authoring interface automatically generates dialogue acts with all possible contents. These dialogue acts are linked to example utterances in order to provide training data for natural language understanding and generation. The virtual human dialogue system contains a dialogue manager following the information-state approach, using finite-state machines and SCXML to manage local coherence, as well as explicit modeling of emotions and compliance level and a grounding component based on evidence of understanding. Using the authoring tools, we design and implement a version of the virtual human Hassan and compare to previous architectures for the character.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Sudeep Gandhe and David Traum.</authors>
+    <title>Evaluation Understudy for Dialogue Coherence Models.</title>
+    <booktitle>9th SIGdial Workshop on Discourse and Dialogue</booktitle>
+    <location>Ohio</location>
+    <month></month>
+    <year>2008</year>
+    <url>publications/sigdial08-evaluation-understudy.pdf</url>
+    <abstract>Evaluating a dialogue system is seen as a major challenge within the dialogue research community. Due to the very nature of the task, most of the evaluation methods need a substantial amount of human involvement. Following the tradition in machine translation, summarization and discourse coherence modeling, we introduce the the idea of evaluation understudy for dialogue coherence models. Following (Lapata, 2006), we use the information ordering task as a testbed for evaluating dialogue coherence models. This paper reports findings about the reliability of the information ordering task as applied to dialogues. We find that simple n-gram co-occurrence statistics similar in spirit to BLEU (Papineni et al., 2001) correlate very well with human judgments for dialogue coherence.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Tim Paek, Sudeep Gandhe and David Maxwell Chickering.</authors>
+    <title>Rapidly Deploying Grammar-Based Speech Applications with Active Learning and Back-off Grammars.</title>
+    <booktitle>9th SIGdial Workshop on Discourse and Dialogue</booktitle>
+    <location>Ohio</location>
+    <month>May</month>
+    <year>2008</year>
+    <url>publications/sigdial08-activeLearning.pdf</url>
+    <abstract>Grammar-based  approaches to spoken language understanding are utilized to a great extent in industry, particularly when developers are confronted with data sparsity.  In order to ensure wide grammar coverage, developers typically modify their grammars in  an iterative process of deploying the application, collecting and transcribing user utterances, and adjusting the grammar.  In this paper, we explore enhancing this iterative process by leveraging active learning with back-off grammars.  Because the back-off grammars expand coverage of  user  utterances, developers have a safety net for deploying applications earlier. Furthermore, the statistics related to the back-off can be used for active learning, thus  reducing the effort and cost of data transcription.  In experiments conducted on a commercially deployed application, the approach achieved levels of semantic accuracy comparable  to transcribing all  failed  utterances with 87% less transcriptions.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Ron Artstein, Sudeep Gandhe, Anton Leuski, and David Traum.</authors>
+    <title>Field Testing of an Interactive Question-Answering Character.</title>
+    <booktitle>Proceedings of ELRA Workshop on Evaluation, LREC</booktitle>
+    <location>Marrakech, Morocco</location>
+    <month></month>
+    <year>2008</year>
+    <url>publications/star_evaluation-web.pdf</url>
+    <abstract>We tested a life-size embodied question-answering character at a convention where he responded to questions from the audience. The character's responses were then rated for coherence. The ratings, combined with speech transcripts, speech recognition results and the character's responses, allowed us to identify where the character needs to improve, namely in speech recognition and providing off-topic responses. </abstract>
+  </publication>
+
+  <publication>
+    <authors>Sudeep Gandhe and David Traum.</authors>
+    <title>Creating Spoken Dialogue Characters from Corpora without Annotations</title>
+    <booktitle>Proceedings of Interspeech-07</booktitle>
+    <location>Antwerp, Belgium</location>
+    <month></month>
+    <year>2007</year>
+    <url>publications/p1186.pdf</url>
+    <abstract>Virtual humans are being used in a number of applications, including simulation-based training, multi-player games, and museum kiosks. Natural language dialogue capabilities are an essential part of their human-like persona. These dialogue systems have a goal of being believable and generally have to operate within the bounds of their restricted domains. Most dialogue systems operate on a dialogue-act level and require extensive annotation efforts. Semantic annotation and rule authoring have long been known as bottlenecks for developing dialogue systems for new domains. In this paper, we investigate several dialogue models for virtual humans that are trained on an unannotated human-human corpus. These are inspired by information retrieval and work on the surface text level. We evaluate these in text-based and spoken interactions and also against the upper baseline of human-human dialogues.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Tim Paek, Sudeep Gandhe, David Maxwell Chickering and Yun Cheng Ju.</authors>
+    <title>Handling out-of-grammar commands in mobile speech interaction using backoff filler models.</title>
+    <booktitle>Proceedings of the ACL Workshop on Grammar-Based Approaches to Spoken Language Processing (SPEECHGRAM)</booktitle>
+    <location>Prague, Czech Replublic</location>
+    <month>June</month>
+    <year>2007</year>
+    <url>publications/paek_speechgram_07.pdf</url>
+    <abstract>In command and control (C&amp;C) speech interaction, users interact by speaking commands or asking questions typically specified in a context-free grammar (CFG). Unfortunately, users often produce out-of grammar (OOG) commands, which can result in misunderstanding or nonunderstanding.  We explore a simple approach to handling OOG commands that involves generating a backoff grammar from any CFG using filler models, and utilizing that grammar for recognition whenever the CFG fails.  Working within the memory footprint requirements of a mobile C&amp;C product, applying the approach yielded a 35% relative reduction in semantic error rate for OOG commands.  It also improved partial recognitions for enabling clarification dialogue.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Sudeep Gandhe and David Traum.</authors>
+    <title>First Steps towards Dialogue Modeling from an Un-annotated Human-Human Corpus.</title>
+    <booktitle>5th Workshop on knowledge and reasoning in practical dialogue systems</booktitle>
+    <location>Hyderabad, India</location>
+    <month>Jan</month>
+    <year>2007</year>
+    <url>publications/gandhe-krpd07.pdf</url>
+    <abstract>Virtual human characters equipped with natural language dialogue capability have proved useful in many fields like simulation training and interactive games. Generally behind such dialogue managers lies a complex knowledge-rich rule-based system. Building such system involves meticulous annotation of data and hand authoring of rules. In this paper we build a statistical dialogue model from roleplay and wizard of oz dialog corpus with virtually no annotation. We compare these methods with the traditional approaches. We have evaluated these systems for perceived appropriateness of response and the results are presented here.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Sudeep Gandhe, Andrew S Gordon and David Traum.</authors>
+    <title>Improving Question-Answering with Linking Dialogues</title>
+    <booktitle>2006 International Conference on Intelligent User Interfaces</booktitle>
+    <location>Sydney, Australia</location>
+    <month>Jan</month>
+    <year>2006</year>
+    <url>publications/p369-gandhe.pdf</url>
+    <abstract>Question-answering dialogue systems have found many applications in interactive learning environments. This paper is concerned with one such application for Army leadership training, where trainees input free-text questions that elicit pre-recorded video responses. Since these responses are already crafted before the question is asked, a certain degree of incoherence exists between the question that is asked and the answer that is given. This paper explores the use of short linking dialogues that stand in between the question and its video response to alleviate the problem of incoherence. We describe a set of experiments with human generated linking dialogues that demonstrate their added value. We then describe our implementation of an automated method for utilizing linking dialogues and show that these have better coherence properties than  the original system without linking dialogues.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Randall Hill, Julia Kim, Michelle Zbylut, Andrew S Gordon, David Traum, Sudeep Gandhe, Stewart King, Salvo Lavis and Scott Rocher.</authors>
+    <title>AXL.Net: Web-enabled Case Method Instruction for Accelerating Tacit Knowledge Acquisition in Leaders</title>
+    <booktitle>25th Army Sceince Conference</booktitle>
+    <location>Orlando, Florida</location>
+    <month></month>
+    <year>2006</year>
+    <url>publications/ASC06.pdf</url>
+    <abstract>AXL.Net is a prototype web-based immersive technology solution that supports case method teaching for U.S. Army leader development. The AXL.Net system addresses three challenges: (1) designing a pedagogically sound research prototype for leader development, (2) integrating research technologies with the best of Web 2.0 innovations to enhance case method teaching, and (3) providing an easy to use system. Initial evaluations show that the prototype application and framework is effective for leader development.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Sudeep Gandhe, Andrew Gordon, Anton Leuski, David R Traum, and Douglas W. Oard.</authors>
+    <title>First Steps toward Linking Dialogues: mediating between free-text questions and pre-recorded video answers.</title>
+    <booktitle>24th Army Science Conference</booktitle>
+    <location>Orlando, Florida</location>
+    <month></month>
+    <year>2004</year>
+    <url>publications/asc2004.pdf</url>
+    <abstract>Pre-recorded video segments can be very compelling for a variety of immersive training purposes, including providing answers to questions in after-action reviews. Answering questions fluently using pre-recorded video poses challenges, however. When humans interact, answers are constructed after questions are posed. When answers are pre-recorded, even if a correct answer exists in a library of video segments, the answer may be phrased in a way that is not coherent with the question. This paper reports on basic research experiments with short “linking dialogues” that mediate between the question and answer to reduce (or eliminate) the incoherence, resulting in more natural human-system interaction. A set of experiments were performed in which links were elicited to bridge between questions from users of an existing training application and selected answers from the system, and then comparisons made with unlinked answers. The results show that a linking dialogue can significantly increase the perceived relevance of the system's answers.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Robert Belvin, Emil Ettelaie, Sudeep Gandhe, Panayiotis Georgiou, Kevin Knight, Daniel Marcu, Scott Millward, Shrikanth Narayanan, Howard Neely and David Traum</authors>
+    <title>Transonics: A Practical Speech-to-Speech Translator for English-Farsi Medical Dialogs.</title>
+    <booktitle>Demo presented at ACL Interactive Poster and Demonstration Sessions</booktitle>
+    <location></location>
+    <month>June</month>
+    <year>2005</year>
+    <url>publications/p89-ettelaie.pdf</url>
+    <abstract>We briefly describe a two-way speech-to-speech  English-Farsi  translation  system prototype  developed  for  use  in  doctor-patient  interactions.   The  overarching philosophy  of the  developers  has  been to create  a  system  that  enables  effective communication,  rather  than  focusing  on maximizing  component-level  performance.   The discussion focuses on the general  approach  and  evaluation  of  the system  by  an  independent  government evaluation team.</abstract>
+  </publication>
+
+  <publication>
+    <authors>S. Narayanan, S. Ananthakrishnan, R. Belvin, E. Ettelaie, S. Gandhe, S. Ganjavi, P. G. Georgiou, C. M. Hein, S. Kadambe, K. Knight, D. Marcu, H. E. Neely, N. Srinivasamurthy, D. Traum and D. Wang.</authors>
+    <title>The Transonics Spoken Dialogue Translator: An aid for English-Persian Doctor-Patient interviews.</title>
+    <booktitle>In working notes of the AAAI Fall symposium on Dialogue Systems for Health Communication</booktitle>
+    <location></location>
+    <month></month>
+    <year>2004</year>
+    <pages>97-103</pages>
+    <url>publications/Transonics-AAAI-04.pdf</url>
+    <abstract>In this paper we describe our spoken english-persian medical dialogue translation system. We describe the data collection effort and give an overview of the component technologies, including speech recognition, translation, dialogue management, and user interface design. The individual modules and system are designed for flexibility, and to be able to leverage different amounts of available resources to maximize the ability for communication between medical care-giver and patient.</abstract>
+  </publication>
+
+  <publication>
+    <authors>David Traum, William Swartout, Jonathan Gratch, Stacy Marsella, Patrick Kenny, Eduard Hovy, Shri Narayanan, Ed Fast, Bilyana Martinovski, Rahul Baghat, Susan Robinson, Andrew Marshall, Dagen Wang, Sudeep Gandhe and Anton Leuski</authors>
+    <title>Dealing with Doctors: A Virtual Human for Non-team Interaction.</title>
+    <booktitle>Demo presented at SIGdial-05</booktitle>
+    <location></location>
+    <month>September</month>
+    <year>2005</year>
+    <url>publications/SIGdial-SASO-demo.pdf</url>
+    <abstract>We present a virtual human doctor who can engage in multi-modal negotiation dialogue with people from other organizations. The doctor is part of the SASO-ST system, used for training for non-team interactions.</abstract>
+  </publication>
+
+  <publication>
+    <authors>Paul Scerri, David Pynadath, Nathan Schurr, Alessandro Farinelli, Sudeep Gandhe and Milind Tambe.</authors>
+    <title>Team-oriented programming and proxy agents: the next generation</title>
+    <booktitle>Proceedings of the workshop on Programming multiagent systems, Lecture notes in computer science</booktitle>
+    <location></location>
+    <editors>M.Dastani, J.Dix</editors>
+    <publisher></publisher>
+    <month></month>
+    <year>2004</year>
+    <url>publications/scerri_et_al_04.pdf</url>
+    <abstract>Coordination between large teams of highly heterogeneous entities will change the way complex goals are pursued in real world environments. One approach to achieving the required coordination in such teams is to give each team member a proxy that assumes routine coordination activities on behalf of its team member. Despite that approach's success, as we attempt to apply this first generation of proxy architecture to larger teams in more challenging environments, some limitations become clear. In this paper, we present initial efforts on the next generation of proxy architecture and Team Oriented Programming (TOP), called Machinetta. Machinetta aims to overcome the limitations of the previous generation of proxies and allow effective coordination between very large teams of highly heterogeneous agents. We describe the principles underlying the design of the Machinetta proxies and present initial results from two domains.</abstract>
+  </publication>
+
+</publications>
  
