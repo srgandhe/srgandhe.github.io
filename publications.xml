@@ -2,6 +2,16 @@
 
 <publications>
   <publication>
+    <authors>Sudeep Gandhe</authors>
+    <title>Rapid prototyping and evaluation of dialogue systems for virtual humans.</title>
+    <booktitle>PhD Thesis. Computer Science, University of Southern California.</booktitle>
+    <month></month>
+    <year>2014</year>
+    <url>publications/SudeepGandheThesisFinal.pdf</url>
+    <abstract></abstract>
+  </publication>
+  
+  <publication>
     <authors>Gurmeet Manku, James Lee-Thorp, Bhargav Kanagal, Joshua Ainslie, Jingchen Feng, Zach Pearson, Ebenezer Anjorin, Sudeep Gandhe, Ilya Eckstein, Jim Rosswog, Sumit Sanghai, Michael Pohl, Larry Adams and D. Sivakumar.</authors>
     <title>ShopTalk: A System for Conversational Faceted Search.</title>
     <booktitle>arXiv preprint arXiv:2109.00702</booktitle>
@@ -10,6 +20,7 @@
     <url>https://arxiv.org/pdf/2109.00702.pdf</url>
     <abstract>We present ShopTalk, a multi-turn conversational faceted search system for shopping that is designed to handle large and complex schemas that are beyond the scope of state of the art slot-filling systems. ShopTalk decouples dialog management from fulfillment, thereby allowing the dialog understanding system to be domain-agnostic and not tied to the particular shopping application. The dialog understanding system consists of a deep-learned Contextual Language Understanding module, which interprets user utterances, and a primarily rules-based Dialog-State Tracker (DST), which updates the dialog state and formulates search requests intended for the fulfillment engine. The interface between the two modules consists of a minimal set of domain-agnostic "intent operators," which instruct the DST on how to update the dialog state. ShopTalk was deployed in 2020 on the Google Assistant for Shopping searches.</abstract>
   </publication>
+
   <publication>
     <authors>Yury Zemlyanskiy, Sudeep Gandhe, Ruining He, Bhargav Kanagal, Anirudh Ravula, Juraj Gottweis, Fei Sha and Ilya Eckstein.</authors>
     <title>DOCENT: Learning Self-Supervised Entity Representations from Large Document Collections.</title>
@@ -19,6 +30,7 @@
     <url>https://aclanthology.org/2021.eacl-main.217.pdf</url>
     <abstract>This paper explores learning rich selfsupervised entity representations from large amounts of associated text. Once pre-trained, these models become applicable to multiple entity-centric tasks such as ranked retrieval, knowledge base completion, question answering, and more. Unlike other methods that harvest self-supervision signals based merely on a local context within a sentence, we radically expand the notion of context to include any available text related to an entity. This enables a new class of powerful, highcapacity representations that can ultimately distill much of the useful information about an entity from multiple text sources, without any human supervision. We present several training strategies that, unlike prior approaches, learn to jointly predict words and entities—strategies we compare experimentally on downstream tasks in the TVMovies domain, such as MovieLens tag prediction from user reviews and natural language movie search. As evidenced by results, our models match or outperform competitive baselines, sometimes with little or no fine-tuning, and can scale to very large corpora. Finally, we make our datasets and pre-trained models publicly available. This includes Reviews2Movielens, mapping the ∼1B word corpus of Amazon movie reviews (He and McAuley, 2016) to MovieLens tags (Harper and Konstan, 2016), as well as Reddit Movie Suggestions with natural language queries and corresponding community recommendations.</abstract>
   </publication>
+  
   <publication>
     <authors>Sudeep Gandhe and David Traum</authors>
     <title>SAWDUST: a Semi-Automated Wizard Dialogue Utterance Selection Tool for domain-independent large-domain dialogue</title>
