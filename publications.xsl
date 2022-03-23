@@ -53,7 +53,7 @@
   <span class="authors"><xsl:value-of select="./authors/text()"/></span><br/>
   <xsl:variable name="publication_abstract_id" select="generate-id(.)"/>
   <xsl:choose>
-    <xsl:when test="string-length(normalize-space(./abstract/text()))">
+    <xsl:when test="string-length(normalize-space(./abstract/text())) or count(./abstract/node()) > 0">
       <a class="atitle"><span class="title" onclick="javascript:exp_coll('{$publication_abstract_id}');"><xsl:value-of select="./title/text()"/></span></a>
     </xsl:when>
     <xsl:otherwise>
@@ -62,11 +62,11 @@
   </xsl:choose><br/>
   <span class="booktitle"><xsl:value-of select="./booktitle/text()"/></span>
   <xsl:if test="string-length(normalize-space(./location/text()))">, <span class="location"><xsl:value-of select="./location/text()"/></span></xsl:if>. <span class="year"><xsl:value-of select="./year/text()"/></span>.
-  <span id="{$publication_abstract_id}" style="display:none; font-size:normal; background-color:#F2E3FF; color:#260050; padding:0px 10px 0px 10px; margin:10px 10px 10px 10px;">
-  <span style="font-weight:bold;font-style:italic;">Abstract<br/></span><xsl:value-of select="./abstract/text()"/>
-  </span>
+  <div id="{$publication_abstract_id}" style="display:none; font-size:normal; background-color:#F2E3FF; color:#260050; padding:5px 0px 5px 0px;">
+    <div style="font-weight:bold;font-style:italic;padding: 5px 5px 10px 10px;">Abstract</div>
+    <div style="padding: 5px 5px 10px 10px;"><xsl:copy-of select="./abstract"/></div>
+  </div>
   </td>
   </tr>
 </xsl:template>
-
 </xsl:stylesheet>
